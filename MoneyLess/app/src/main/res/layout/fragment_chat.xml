@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <!-- 头部 -->
+
+<!--    <RelativeLayout
+        android:id="@+id/chat_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFCC00" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="少少"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>-->
+
+    <!-- 底部 -->
+
+    <RelativeLayout
+        android:id="@+id/chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFCC00" >
+
+        <EditText
+            android:id="@+id/chat_input_message"
+            android:layout_width="320dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/inputborder"
+            android:gravity="left" />
+
+
+
+        <Button
+            android:id="@+id/chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chat_input_message"
+            android:background="@drawable/send"
+            android:text="发送"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!-- 中间 -->
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chat_bottom"
+
+        android:layout_marginBottom="0dp"
+        android:divider="@null"
+        android:dividerHeight="3dp"></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_black_24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="servlet-api">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../BaiduNetdiskDownload/04.第十一章曲线积分与曲面积分/FiveChess/lib/mysql-connector-java-8.0.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
